@@ -1,0 +1,1194 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style */
+body {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.whale-section{
+    width: 100%;
+    height: 100%;
+    background-color: #edf3f8;
+    overflow: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 14.3rem;
+    background: url(../assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -552px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 2.5rem 1.5rem;
+}
+
+.header__logo img{
+    width: 135px;
+    height: 38px;
+}
+
+.header__menu{
+    position: fixed;
+    height: 100vh;
+    width: 18.75rem;
+    background: url(../assets/shared/desktop/bg-pattern-circle.svg),
+        #1B262F;
+    background-repeat: no-repeat;
+    background-position-x: -340px;
+    background-position-y: -563px;
+    top: -100rem;
+    right: -20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: top 1s, right 1s;
+}
+
+.showMenu{
+    top: 0;
+    right: 0;
+}
+
+.close-icon{
+    width: 22px;
+    height: 23px;
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 1.5rem;
+}
+
+.menu__list{
+    margin: 5.9rem 1.5rem -0.6rem 1.5rem;
+    border-top: 1px solid #FBFCFE;
+    padding: 2.6rem 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 15.5rem;
+}
+
+.menu__list{
+    list-style: none;
+}
+
+.menu__list li a{
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsla(220, 60%, 99%, 0.7);
+    transition: color 0.8s;
+}
+
+.header__menu button{
+    background-color: #BA4270;
+    color: #FBFCFE;
+    width: 252px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.12px;
+}
+
+.menu-icon{
+    width: 28px;
+    height: 17px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.content__entry{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: -9rem 0 0 0;
+}
+
+.entry__image img{
+    margin-bottom: -3rem;
+    width: 200px;
+}
+
+.entry__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 327px;
+    gap: 1.5rem;
+}
+
+.entry__text__head h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: #36536B;
+}
+
+.entry__text__mail__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.entry__text__mail__form input{
+    width: 327px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 0 1.6rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px grey;
+    font-size: 15px;
+    font-family: "Public Sans", sans-serif;
+    cursor: pointer;
+}
+
+.entry__text__mail__form input::placeholder{
+    font-size: 15px;
+    font-family: "Public Sans", sans-serif;
+}
+
+.entry__text__mail__form button{
+    width: 327px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    background-color: #BA4270;
+    color: #FBFCFE;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.12px;
+    cursor: pointer;
+}
+
+.entry__text__mail p{
+    margin-top: 1.5rem;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    color: #6C8294;
+}
+
+.bold{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.content__work-with{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    background: url(../assets/shared/desktop/bg-pattern-circle.svg),
+        #1B262F;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -630px;
+    height: 41.8rem;
+    gap: 3.5rem;
+}
+
+.work-with__list{
+    width: 17.5rem;
+}
+
+.work-with__list ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3 , 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.work-with__list ul li{
+    list-style: none;
+}
+
+.work-with__list ul li img{
+    width: 106.02px;
+}
+
+.work-with__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.work-with__text__block{
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.work-with__text__block h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: #FBFCFE;
+}
+
+.work-with__text__block p{
+    font-family: 'Public Sans', sans-serif;
+    line-height: 28px;
+    font-size: 15px;
+    color: hsla(220, 60%, 99%, 0.7);
+}
+
+.work-with__button button{
+    width: 129px;
+    height: 48px;
+    border: 1px solid #fff;
+    background-color: #1B262F;
+    border-radius: 40px;
+    color: #FBFCFE;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.12px;
+    cursor: pointer;
+}
+
+.content__about{
+    margin: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about__block__image{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, 0);
+    top: -2rem;
+    width: 400px;
+    overflow: hidden;
+}
+
+.about__block__image img{
+    width: 440px;
+}
+
+.implement .about__block__text{
+    margin-top: -4rem;
+}
+
+.about__block__text{
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.about__block__text h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.28px;
+    color: #36536B;
+}   
+
+.about__block__text p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: hsla(207, 16%, 50%, 0.7);
+}
+
+.simple img{
+    width: 430px;
+}
+
+.simple .about__block__text{
+    margin-top: -3rem;
+}
+
+.content__benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.benefits__block{
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.benefits__block__image img{
+    width: 106px;
+    height: 106px;
+}
+
+.benefits__block__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.benefits__block__text h3{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.14px;
+    color: #36536B;
+}
+
+.benefits__block__text p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+    color: #6C8294;
+}
+
+.content__email{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.email__head h3{
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: #36536B;
+}
+
+.email__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.email__input input{
+    width: 327px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 0 1.6rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px grey;
+    font-size: 15px;
+    font-family: "Public Sans", sans-serif;
+    cursor: pointer;
+}
+
+.email__input input::placeholder{
+    font-size: 15px;
+    font-family: "Public Sans", sans-serif;
+}
+
+.email__input button{
+    width: 327px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    background-color: #BA4270;
+    color: #FBFCFE;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.12px;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    background: url(../assets/shared/desktop/bg-pattern-circle.svg),
+        #1B262F;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 185px;
+}
+
+.footer__list-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer__list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer__list ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer__list ul li a{
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsla(220, 60%, 99%, 0.7);
+    text-decoration: none;
+}
+
+.footer__link ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer__link ul li{
+    cursor: pointer;
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {    
+    .header{
+        height: 17.8rem;
+        background: url(../assets/shared/desktop/bg-pattern-circle.svg);
+        background-size: 150%;
+        background-position-x: center;
+        background-position-y: bottom;
+        padding: 2.8rem 2.5rem;
+        gap: 4rem;
+    }
+    
+    .header__menu{
+        width: 100%;
+        height: 38px;
+        position: static;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    .menu__list{
+        margin: 0;
+        border-top: none;
+        padding: 0; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+        width: 100%;
+    }
+    
+    .menu__list li a{
+        font-size: 15px;
+        color: hsla(207, 33%, 32%, 0.7);
+    }
+    
+    .header__menu button{
+        width: 240px;
+        height: 48px;
+        border-radius: 40px;
+        border: none;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.12px;
+    }
+    
+    .content__entry{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin: -12rem 0 0 0;
+    }
+    
+    .entry__image img{
+        padding-left: 1.7rem;
+        margin-bottom: -3rem;
+        width: 300px;
+    }
+    
+    .entry__text{
+        width: 573px;
+        gap: 1.3rem;
+    }
+
+    
+    .entry__text__head h1{
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }
+
+    .entry__text__mail__form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        width: 445px;
+    }
+    
+    .entry__text__mail__form input{
+        width: 445px;
+    }
+    
+    .entry__text__mail__form button{
+        width: 240px;
+        position: relative;
+        margin-left: -3rem;
+        box-shadow: 0 1px 3px grey;
+    }
+    
+    .content__work-with{
+        margin: 6.25rem 0;
+        padding: 0 7.25rem;
+        background-size: 110%;
+        height: 38.4rem;
+        gap: 4rem;
+    }
+    
+    .work-with__list{
+        width: 33.5rem;
+    }
+    
+    .work-with__list ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+    
+    .work-with__list ul li{
+        list-style: none;
+    }
+    
+    .work-with__list ul li img{
+        width: 129px;
+    }
+    
+    .work-with__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .work-with__text__block{
+        width: 457px;
+        gap: 1.5rem;
+    }
+    
+    .work-with__text__block h2{
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }
+    
+    .content__about{
+        margin: 5rem 0 6.25rem 0;
+        gap: 6.25rem;
+    }
+    
+    .about__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .about__block__image{
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin: 0 auto;
+        transform: translate(-50%, 0);
+        top: -2rem;
+        width: 515px;
+        overflow: hidden;
+    }
+
+    
+    .about__block__image img{
+        width: 500px;
+    }
+    
+    .implement .about__block__text{
+        margin-top: -4rem;
+    }
+    
+    .about__block__text{
+        width: 573px;
+    }
+    
+    .about__block__text h2{
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }   
+    
+    .simple img{
+        width: 500px;
+    }
+    
+    .simple .about__block__text{
+        margin-top: -3rem;
+    }
+    
+    .content__benefits{
+        padding: 0 2.4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        gap: 0.6rem;
+    }
+    
+    .benefits__block{
+        width: 100%;
+        height: 100%;
+    }
+    .benefits__block__text{
+        width: 223px;
+    }
+    
+    .benefits__block__image img{
+        width: 88px;
+        height: 88px;
+    }
+    
+    .content__email{
+        margin: 6.25rem 0;
+        gap: 2.5rem;
+    }
+    
+    .email__head h3{
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }
+
+        
+    .entry__text__mail__form input{
+        width: 445px;
+    }
+    
+    .entry__text__mail__form button{
+        width: 240px;
+        position: relative;
+        margin-left: -3rem;
+        box-shadow: 0 1px 3px grey;
+    }
+    
+    .email__input{
+        flex-direction: row;
+        gap: 0;
+        width: 445px;
+    }
+    
+    .email__input input{
+        width: 445px;
+    }
+    
+    .email__input button{
+        width: 240px;
+        position: relative;
+        margin-left: -3rem;
+        box-shadow: 0 1px 3px grey;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2.5rem;
+        padding: 1.9rem 2.4rem;
+        background: #1B262F;
+    }
+
+    .footer__list-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .footer__list ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .header{
+        height: 38rem;
+        background: url(../assets/shared/desktop/bg-pattern-circle.svg);
+        background-size: 780px;
+        background-repeat: no-repeat;
+        background-position-x: 115%;
+        background-position-y: 105%;
+        padding: 2.8rem 10.3rem;
+        gap: 4rem;
+    }
+    
+    .header__menu{
+        width: 100%;
+        height: 38px;
+        position: static;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    .menu__list{
+        margin: 0;
+        border-top: none;
+        padding: 0; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+        width: 100%;
+    }
+
+    .menu__list li:hover a{
+        color: hsla(207, 33%, 32%, 1);
+    }
+    
+    .menu__list li a{
+        font-size: 15px;
+        color: hsla(207, 33%, 32%, 0.7);
+        transition: color 0.8s;
+    }
+    
+    .header__menu button{
+        width: 240px;
+        height: 48px;
+        border-radius: 40px;
+        border: none;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.12px;
+        transition: background-color 1s ease;
+        cursor: pointer;
+    }
+
+    .header__menu button:hover{
+        background-color: #DA6D97;
+    }
+    
+    .content__entry{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: -32rem 0 0 0;
+        padding: 0 10.3rem;
+    }
+
+    .entry__image{
+        order: 1;
+    }
+    
+    .entry__image img{
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    .entry__text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        width: 546px;
+        gap: 1.5rem;
+    }
+    
+    .entry__text__head h1{
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.55px;
+    }
+    
+    .entry__text__mail__form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        width: 500px;
+    }
+    
+    .entry__text__mail__form input{
+        width: 445px;
+    }
+    
+    .entry__text__mail__form button{
+        width: 180px;
+        transition: background-color 1s ease-out;
+    }
+
+    .entry__text__mail__form button:hover{
+        background-color: #DA6D97;
+    }
+    
+    .entry__text__mail p{
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+
+    }
+    
+    .bold{
+        font-weight: 700;
+    }
+    
+    .content__work-with{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10.3rem;
+        background: url(../assets/shared/desktop/bg-pattern-circle.svg),
+            #1B262F;
+        background-size: 780px;
+        background-repeat: no-repeat;
+        background-position-x: -235px;
+        background-position-y: -359px;
+        height: 29.5rem;
+        gap: 0;
+    }
+    
+    .work-with__list{
+        width: 100%;
+        order: 1;
+    }
+    
+    .work-with__list ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+    
+    .work-with__list ul li img{
+        width: 129px;
+    }
+    
+    .work-with__text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        text-align: left;
+        gap: 2rem;
+    }
+    
+    .work-with__text__block{
+        width: 445px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5rem;
+    }
+    
+    .work-with__text__block h2{
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }
+
+    .work-with__button button{
+        transition: color 1s, background-color 1s;
+    }
+
+    .work-with__button button:hover{
+        color: #1B262F;
+        background-color: #FBFCFE;
+    }
+    
+    .content__about{
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 0);
+        margin: 9.3rem 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .about__block{
+        display: grid;
+        padding: 0 13.3rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+        overflow: visible;
+    }
+    
+    .about__block__image{
+        position: static;
+        left: 50%;
+        right: 50%;
+        margin: 0 auto;
+        transform: translate(-50%, 0);
+        top: -2rem;
+        overflow: visible;
+    }
+
+    .about__block__image{
+        width: 800px;
+
+    }
+    
+    .about__block__image img{
+        margin-left: 18rem;
+        width: 700px;
+    }
+    
+    .implement .about__block__text{
+        margin-top: -4rem;
+    }
+    
+    .about__block__text{
+        margin-left: -15rem;
+        width: 445px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        gap: 1.5rem;
+    }
+    
+    .about__block__text h2{
+        font-family: 'DM Serif Display', serif;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+        color: #36536B;
+    }   
+    
+    .about__block__text p{
+        font-family: 'Public Sans', sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        color: #6C8294;
+    }
+
+    .simple{
+        height: 780px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        gap: 25rem;
+        background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
+        background-size: 780px;
+        background-position-x: 160%;
+        background-position-y:center;
+        background-repeat: no-repeat;
+    }
+
+    .simple .about__block__image{
+        order: 1;
+        width: 500px;
+    
+    }
+    .simple img{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .simple .about__block__text{
+        margin-top: -3rem;
+        margin-left: 10.3rem;
+    }
+    
+    .content__benefits{
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        width: 69.3rem;
+        gap: 1rem;
+    }
+    
+    .benefits__block{
+        width: 100%;
+        height: 100%;
+    }
+    .benefits__block__text{
+        width: 350px;
+    }
+    
+    .benefits__block__image img{
+        width: 106px;
+        height: 106px;
+    }
+    
+    
+    .content__email{
+        margin: 6.25rem auto;
+        gap: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 69.3rem;
+    }
+    
+    .email__head h3{
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }
+    
+    .email__input{
+        flex-direction: row;
+        gap: 0;
+        width: 445px;
+    }
+    
+    .email__input input{
+        width: 445px;
+    }
+    
+    .email__input button{
+        width: 240px;
+        position: relative;
+        margin-left: -3rem;
+        box-shadow: 0 1px 3px grey;
+        transition: background-color 1s;
+    }
+
+    .email__input button:hover{
+        background-color: #DA6D97;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2.5rem;
+        padding: 1.9rem 10.3rem;
+        background: #1B262F;
+    }
+
+    .footer__list-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .footer__list ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .footer__list ul li a{
+        transition: color 0.8s;
+    }
+
+    .footer__list ul li:hover a{
+        color:#FBFCFE;
+    }
+
+    .footer__link ul li a svg path{
+        transition: fill 1s;
+    }
+
+    .footer__link ul li:hover a svg path{
+        fill: #DA6D97;
+    }
+
+}
